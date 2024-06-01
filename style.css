@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 10px;
+  background: linear-gradient(135deg, #69afde, #c9a1d8);
+}
+.container {
+  max-width: 900px;
+  width: 100%;
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 5px;
+  margin-top: 60px;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.personaldetail_conatainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .input_box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.input_box input,
+select {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(159, 157, 157);
+  padding-left: 15px;
+  font-size: 14px;
+  border-bottom-width: 3px;
+}
+
+.input_box input:focus,
+select:focus {
+  border-color: #354151;
+}
+
+.addmore {
+  height: 30px;
+  width: 15%;
+  outline: none;
+  color: black;
+  border: none;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #a5b1c2;
+}
+.addmore:hover {
+  background-color: #75808e;
+}
+
+form .btn_container {
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn_container button {
+  height: 100%;
+  width: 30%;
+  outline: none;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #033d70, #9202c6);
+
+  margin: 10px;
+}
+
+.btn_container button:hover {
+  background: linear-gradient(-135deg, #033d70, #9202c6);
+}
+
+.steps {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+#profilePage {
+  display: none;
+}
+
+.profile_data {
+  display: flex;
+  margin: 20px;
+}
+.detail_value {
+  font-size: 18px;
+  margin-left: 20px;
+  align-items: center;
+}

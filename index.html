@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="multiStepForm">
+        <div class="steps active" id="step1">
+          <h1>Personal Details</h1>
+          <div class="personaldetail_conatainer">
+            <div class="input_box">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="input_box">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="input_box">
+              <label for="contact">Contact</label>
+              <input
+                type="tel"
+                id="contact"
+                name="contact"
+                placeholder="Enter your contact"
+                required
+              />
+            </div>
+            <div class="input_box">
+              <label for="dob">Date of Birth</label>
+              <input
+                type="date"
+                id="dob"
+                name="dob"
+                placeholder="Enter your dob"
+                required
+              />
+            </div>
+            <div class="input_box">
+              <label for="age">Age</label>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                placeholder="Your age"
+                readonly
+              />
+            </div>
+            <div class="input_box">
+              <label for="image">Image</label>
+              <input type="file" id="image" name="image" />
+            </div>
+            <div class="input_box">
+              <label for="state">State</label>
+              <select id="state" name="state" required>
+                <option value="">Select State</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="MP">Madhya Pradesh</option>
+              </select>
+            </div>
+            <div class="input_box">
+              <label for="city">City</label>
+              <select id="city" name="city" required>
+                <option value="">Select City</option>
+              </select>
+            </div>
+          </div>
+          <div class="btn_container">
+            <button type="button" class="next_btn">Next</button>
+          </div>
+        </div>
+
+        <div class="steps" id="step2">
+          <h1>Qualification</h1>
+          <div id="qualification_container">
+            <div class="qualification_row">
+              <div class="input_box">
+                <label for="standard">Standard</label>
+                <select name="standard" required>
+                  <option value="">Select Standard</option>
+                  <option value="highschool">High School</option>
+                  <option value="inter">Intermediate</option>
+                  <option value="graduation">Graduation</option>
+                  <option value="postgraduation">Post Graduation</option>
+                </select>
+              </div>
+              <div class="input_box">
+                <label for="score">Score</label>
+                <input type="number" name="score" id="score" required />
+              </div>
+              <div class="input_box">
+                <label for="total">Total</label>
+                <input type="number" name="total" id="total" required />
+              </div>
+              <div class="input_box">
+                <label for="percentage">Percentage</label>
+                <input
+                  type="number"
+                  name="percentage"
+                  id="percentage"
+                  readonly
+                />
+              </div>
+            </div>
+          </div>
+          <button type="button" class="addmore" onclick="addQualification()">
+            Add More
+          </button>
+          <div class="btn_container">
+            <button type="button" class="prev_btn">Previous</button>
+            <button type="button" class="next_btn">Next</button>
+          </div>
+        </div>
+
+        <div class="steps" id="step3">
+          <h1>Experience</h1>
+          <div id="experience_container">
+            <div class="experience_row">
+              <div class="input_box">
+                <label for="company">Company Name</label>
+                <input type="text" name="company" required />
+              </div>
+              <div class="input_box">
+                <label for="title">Title</label>
+                <input type="text" name="title" required />
+              </div>
+              <div class="input_box">
+                <label for="project">Project</label>
+                <input type="text" name="project" required />
+              </div>
+              <div class="input_box">
+                <label for="from">From</label>
+                <input type="date" name="from" required />
+              </div>
+              <div class="input_box">
+                <label for="to">To</label>
+                <input type="date" name="to" required />
+              </div>
+            </div>
+          </div>
+          <button type="button" class="addmore" onclick="addExperience()">
+            Add More
+          </button>
+          <div class="btn_container">
+            <button type="button" class="prev_btn">Previous</button>
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+
+      <div id="profilePage">
+        <h1>Profile</h1>
+        <div id="profileContent"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
